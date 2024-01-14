@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">Performing CRUD operation on ASP.NET WEB API using Fetch method</h1>
+    <hr>
+    <br>
+    <div class="container">
+        <form class="form" id="myform" >
+            <h6 class="text-center" >Add Students To Api</h6>
+            <div class="row">
+              <div class="col">
+                <input type="text" id="textname" class="form-control" placeholder="Enter Name" required>
+              </div>
+              <div class="col">
+                <input type="text" id="textemail" class="form-control" placeholder="Enter Email" required>
+              </div>
+              
+            </div>
+            <br>
+              <button type="submit"  id="saveform" class="btn btn-primary">Submit</button>
+          </form>
+          <hr>
+
+          <table id="apiDataTable" class="table">
+           
+          </table>
+
+        <hr>
+        <button type="submit"  class="btn btn-primary" onclick="fetchDataAndCreateTable()">Get Api Data</button>
+
+        <hr>
+        <div class="row">
+            <div class="column col-6">
+                <form id="deletestd">
+                    <input type="text" id="delt" class="form-control" placeholder="Enter Id To Delete" required> 
+                    <br>
+                    <button type="submit"  id="deletedataById" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <form class="form" id="updatemyform" >
+            <h6 class="text-center">Update Api Students</h6>
+            <div class="row">
+             <div class="col col-4">
+                <input type="text" id="textid" class="form-control" placeholder="Enter Id" required>
+             </div>
+              <div class="col col-4">
+                <input type="text" id="textname" class="form-control" placeholder="Enter Name" required>
+              </div>
+              <div class="col col-4">
+                <input type="text" id="textemail" class="form-control" placeholder="Enter Email" required>
+              </div>
+            </div>
+            <br>
+              <button type="submit"  id="updateform" class="btn btn-primary">Update</button>
+          </form>
+          <hr>
+
+          <table id="apiDataTable" class="table">
+           
+          </table>
+
+
+
+
+    </div>
+
+    <script src="/Js/CrudFetch.js"></script>
+  </body>
+</html>
